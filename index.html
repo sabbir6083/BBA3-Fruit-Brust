@@ -12,14 +12,64 @@
     <script src="https://cdn.tailwindcss.com"></script> 
     <!-- Fontawsome icon cdn -->
     <script src="https://kit.fontawesome.com/ad68cbffa5.js" crossorigin="anonymous"></script>
+    <!-- Tailwind color cdn -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'deafult-color': '#F85559',
+              }
+            }
+          }
+        }
+      </script>
    <title>BBA3 FRUITS BURST</title>
    <link rel="icon" href="./images/logo.png" type="image/x-icon">
 
    <style>
-
+     .lato-font{
+        font-family: 'Lato', sans-serif;
+     }
    </style>
 </head>
-<body>
-    
+<body class="lato-font">
+    <header class="container mx-auto">
+        <div class="navbar bg-deafult-color rounded-[600px]">
+            <div class="navbar-start w-1/3">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li><a>Parent</a></li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <div class="navbar hidden lg:flex justify-start">
+                <ul class="menu menu-horizontal ">
+                  <li><a>Item 1</a></li>
+                  <li><a>Parent</a></li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+          <div class="w-1/3">
+            <div class="flex items-center">
+                
+                <img src="./images/logo.png" alt="logo">
+                <h3 class="ml-4 text-white text-[40px] font-bold">Fruit Burst</h3>
+                
+            </div>
+          </div>
+
+            <div class="navbar-end w-1/3">
+              <a class="btn">Button</a>
+            </div>
+          </div>
+    </header>
 </body>
 </html>
