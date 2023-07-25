@@ -33,41 +33,54 @@
      }
    </style>
 </head>
+
 <body class="lato-font">
-    <header class="container mx-auto">
-        <div class="navbar bg-deafult-color rounded-[600px]">
-            <div class="navbar-start w-1/3">
+    <header class="container mx-auto my-8">
+        <div class="navbar  lg:bg-deafult-color lg:rounded-[600px] py-3">
+            <div class="navbar-start w-[20%] lg:w-[40%]">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li><a>Parent</a></li>
-                  <li><a>Item 3</a></li>
+                <ul tabindex="0" class="menu menu-sm dropdown-content text-#ddd text-lg mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                  <li><input type="text" placeholder="Search here" class="input input-bordered lg:w-96 md:w-auto relative rounded-[50px]" />
+                    <a href=""><i class="fas fa-search absolute top-4 right-5 lg:right-7"></i></a>
+                    <li>
+
+                  
                 </ul>
               </div>
               <div class="navbar hidden lg:flex justify-start">
-                <ul class="menu menu-horizontal ">
-                  <li><a>Item 1</a></li>
-                  <li><a>Parent</a></li>
-                  <li><a>Item 3</a></li>
+                <ul class="menu menu-horizontal text-white text-lg ">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                    
                 </ul>
               </div>
 
             </div>
 
-          <div class="w-1/3">
-            <div class="flex items-center">
+          <div class="w-[70%] lg:w-[30%] md:80% flex justify-center">
+            <div class="logo-img flex items-center justify-center">
                 
                 <img src="./images/logo.png" alt="logo">
-                <h3 class="ml-4 text-white text-[40px] font-bold">Fruit Burst</h3>
+                <h3 class="ml-4 lg:text-white text-[40px] font-bold">Fruit Burst</h3>
                 
+
             </div>
           </div>
 
-            <div class="navbar-end w-1/3">
-              <a class="btn">Button</a>
+            <div class="navbar-end w-1/4 hidden lg:flex relative">
+                
+                <input type="text" placeholder="Search here" class="input input-bordered lg:w-96 md:w-auto relative rounded-[50px]" />
+                <a href=""><i class="fas fa-search absolute top-4 sm:right-3 lg:right-7"></i></a>
+             
             </div>
           </div>
     </header>
