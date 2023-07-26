@@ -27,10 +27,26 @@
    <title>BBA3 FRUITS BURST</title>
    <link rel="icon" href="./images/logo.png" type="image/x-icon">
 
+   <!-- Some Custom css -->
    <style>
      .lato-font{
         font-family: 'Lato', sans-serif;
      }
+
+     .border-dashed {
+    border-right: 1px dotted #000;
+  }
+
+  /* Custom CSS for card p class underline border*/
+.card-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -46px;
+  width: 230px;
+  height: 1px;
+  background-color:rgba(18, 18, 18, 0.10);
+}
    </style>
 </head>
 
@@ -179,8 +195,136 @@
         
         
     </header>
-    <main class="container">
+    <main class="container mx-auto">
+     <!-- Deal of the day Section -->
+     <section class="mt-28">
+      <!-- deal heading -->
+    <div class="flex flex-col lg:flex-row lg:justify-between lg:mt-10">
+      <div class="">
+        <h2 class="text-5xl text-[#121212] font-bold">Deal of the day</h2>
+        <p class="text-[rgba(18, 18, 18, 0.60) font-medium] mt-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin 
+          literature from 45 BC, making it over 2000 years old.</p>
+      </div>
 
+     <div>
+
+      <div class="flex gap-5">
+        <div class="border-dashed pr-3">
+          <span class="countdown font-mono text-4xl">
+            <span style="--value:29;"></span>
+          </span>
+          <h2>days</h2>
+        </div> 
+        <div>
+          <span class="countdown font-mono text-4xl">
+            <span style="--value:15;"></span>
+          </span>
+          <h2>hours</h2>
+        </div> 
+        <div>
+          <span class="countdown font-mono text-4xl">
+            <span style="--value:24;"></span>
+          </span>
+          <h2>min</h2>
+        </div> 
+        <div>
+          <span class="countdown font-mono text-4xl">
+            <span style="--value:08;"></span>
+          </span>
+          <h2>sec</h2>
+        </div>
+      </div>
+     </div>
+
+  </div>
+
+  <!-- card section -->
+  
+  <div class="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- 1st card -->
+    <div class="card bg-base-100 border-gray-300 border-[1px] rounded-lg">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title relative mb-5 ">12.90$ - 18.85$</h2>
+        <p class="mt-5 mb-4 text-[rgba(18, 18, 18, 0.60)] font-medium">Apples</p>
+        <div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked  />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+        </div>
+        <div class="card-actions mr-3 mt-8">
+          <a class="text-[#F85559] text-center" href="#"> Details</a>
+        </div>
+      </div>
+    </div>
+   <!-- 2nd cad -->
+    <div class="card bg-base-100 border-gray-300 border-[1px] rounded-lg">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title relative mb-5 ">10.20$ - 19.25$</h2>
+        <p class="mt-5 mb-4 text-[rgba(18, 18, 18, 0.60)] font-medium">Orange</p>
+        <div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked  />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+        </div>
+        <div class="card-actions mr-3 mt-8">
+          <a class="text-[#F85559] text-center" href="#"> Details</a>
+        </div>
+      </div>
+    </div>
+      <!-- 3rd card -->
+    <div class="card bg-base-100 border-gray-300 border-[1px] rounded-lg">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title relative mb-5 ">15.25$ - 25.85$</h2>
+        <p class="mt-5 mb-4 text-[rgba(18, 18, 18, 0.60)] font-medium">Red Dragon</p>
+        <div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked  />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+        </div>
+        <div class="card-actions mr-3 mt-8">
+          <a class="text-[#F85559] text-center" href="#"> Details</a>
+        </div>
+      </div>
+    </div>
+     <!-- 4th card -->
+    <div class="card bg-base-100 border-gray-300 border-[1px] rounded-lg">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title relative mb-5 ">13.90$ - 20.85$</h2>
+        <p class="mt-5 mb-4 text-[rgba(18, 18, 18, 0.60)] font-medium">Banana</p>
+        <div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked  />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+        </div>
+        <div class="card-actions mr-3 mt-8">
+          <a class="text-[#F85559] text-center" href="#"> Details</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+     </section>
         
 
     </main>
