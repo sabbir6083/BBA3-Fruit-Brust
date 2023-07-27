@@ -19,6 +19,7 @@
             extend: {
               colors: {
                 'deafult-color': '#F85559',
+                '2fr': 'minmax(0, 2fr)'
               }
             }
           }
@@ -102,7 +103,7 @@
           </div>
         
         <!-- Slider Section  -->
-        <div class="carousel w-full my-12 h-[350px] lg:h-[600px] relative">
+        <div class="carousel w-full my-12 h-[350px] lg:h-[600px] ">
           <!-- 1st slider -->
              <div id="slide1" class="carousel-item relative w-full">
               <img src="./images/banner1.png" class="w-full" />
@@ -167,7 +168,7 @@
           </div> 
            <!--lg screen slider bottom position grid part  -->
         
-          <div class="hidden lg:flex justify-evenly bg-white rounded-lg  mx-auto  absolute -bottom-[225px] left-[204px] ">
+          <div class="hidden lg:flex justify-evenly bg-white rounded-lg shadow-lg p-4  mx-auto w-[80%] relative -top-[140px] ">
             <div class="px-6">
               <img src="./images/fruit1.png" alt="">
               <h3 class="text-xl font-medium text-center">Grapes</h6>
@@ -197,7 +198,7 @@
     </header>
     <main class="container mx-auto">
      <!-- Deal of the day Section -->
-     <section class="mt-28">
+     <section class="">
       <!-- deal heading -->
     <div class="flex flex-col lg:flex-row lg:justify-between lg:mt-10">
       <div class="">
@@ -253,11 +254,11 @@
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked  />
+          <input type="radio" name="rating-44" class="mask mask-star-2 bg-[#F85559]"checked  />
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
         </div>
         <div class="card-actions mr-3 mt-8">
-          <a class="text-[#F85559] text-center" href="#"> Details</a>
+          <a class="text-[#F85559] text-center cursor-pointer" onclick="my_modal_5.showModal()"> Details</a>
         </div>
       </div>
     </div>
@@ -272,12 +273,12 @@
         <div class="rating">
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked  />
+          <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#F85559]"checked />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"   />
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
         </div>
         <div class="card-actions mr-3 mt-8">
-          <a class="text-[#F85559] text-center" href="#"> Details</a>
+          <a class="text-[#F85559] text-center cursor-pointer" onclick="my_modal_6.showModal()"> Details</a>
         </div>
       </div>
     </div>
@@ -293,11 +294,11 @@
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked  />
+          <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" checked  />
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
         </div>
         <div class="card-actions mr-3 mt-8">
-          <a class="text-[#F85559] text-center" href="#"> Details</a>
+          <a class="text-[#F85559] text-center cursor-pointer"onclick="my_modal_8.showModal()"> Details</a>
         </div>
       </div>
     </div>
@@ -313,11 +314,11 @@
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
           <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked  />
-          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]"  />
+          <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]"checked  />
         </div>
         <div class="card-actions mr-3 mt-8">
-          <a class="text-[#F85559] text-center" href="#"> Details</a>
+          <a class="text-[#F85559] text-center cursor-pointer" onclick="my_modal_9.showModal()"> Details</a>
         </div>
       </div>
     </div>
@@ -352,7 +353,7 @@
                     <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-facebook"></i></a></li>
                     <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-instagram"></i></a></li>
                     <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    
                   </ul>
                 </div>
                 </div>
@@ -369,7 +370,7 @@
                       <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-facebook"></i></a></li>
                       <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-instagram"></i></a></li>
                       <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                      <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                      
                     </ul>
                   </div>
                   </div>
@@ -386,7 +387,7 @@
                       <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-facebook"></i></a></li>
                       <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-instagram"></i></a></li>
                       <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                      <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                     
                       </ul>
                     </div>
                     </div>
@@ -403,7 +404,7 @@
                     <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-facebook"></i></a></li>
                     <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-instagram"></i></a></li>
                     <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="w-[24px] h-[24px] bg-[#F85559] rounded-full"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    
                     </ul>
                     </div>
                     </div>
@@ -418,6 +419,285 @@
       </div>
      </section>
 
+     <!-- Why chose Us section -->
+     <section class="my-24">
+      <!-- Section heading -->
+      <div class="flex justify-center">
+        <div>
+          <h2 class="text-5xl text-[#121212] font-bold text-center">Why Choose Us</h2>
+          <p class="font-medium text-[#12121299] text-center mt-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin 
+            literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+      </div>
+      <!-- section content -->
+
+      <div class="flex items-start flex-col lg:flex-row mt-12">
+        <!-- 1st text content col -->
+      <div>
+          
+        <div class="flex mt-6">
+          <div class=" bg-gray-200 w-[80px] h-[55px] rounded-full flex justify-center items-center text-center">
+            <i class="fas fa-heart text-[#121212] w-6 h-6"></i>
+          </div>
+        <div class="ml-6">
+          <h3 class="text-[#121212] text-2xl font-bold mb-2">Fresh is Best</h3>
+          <hr class="w-24 h-[2px] bg-[#121212]">
+          <p class="text-[#12121299] font-medium mt-3">Professional employees are there for you to pick the most 
+            amazing and fresh fruits.
+            <i class="fas fa-user-group"></i>
+          </p>
+        </div>
+        </div>
+
+        
+          <div class="flex mt-6">
+          <div class=" bg-gray-200 w-[80px] h-[55px] rounded-full flex justify-center items-center text-center">
+            <i class="fas fa-heart text-[#121212] w-6 h-6"></i>
+          </div>
+        <div class="ml-6">
+          <h3 class="text-[#121212] text-2xl font-bold mb-2">Fresh is Best</h3>
+          <hr class="w-24 h-[2px] bg-[#121212]">
+          <p class="text-[#12121299] font-medium mt-3">Professional employees are there for you to pick the most 
+            amazing and fresh fruits.
+            <i class="fas fa-user-group"></i>
+          </p>
+        </div>
+        </div>
+        
+
+
+        <div class="flex mt-6">
+          <div class=" bg-gray-200 w-[80px] h-[55px] rounded-full flex justify-center items-center text-center">
+            <i class="fas fa-gift text-[#121212] w-6 h-6"></i>
+          </div>
+        <div class="ml-6">
+          <h3 class="text-[#121212] text-2xl font-bold mb-2">Gift Certificates</h3>
+          <hr class="w-24 h-[2px] bg-[#121212]">
+          <p class="text-[#12121299] font-medium mt-3">Professional employees are there for you to pick the most 
+            amazing and fresh fruits.
+            <i class="fas fa-user-group"></i>
+          </p>
+        </div>
+        </div>
+        
+      </div>
+        
+         <!-- 2nd picture column -->
+        <div>
+          <img class="" src="./images/whychoose1.png" alt="">
+        </div>
+         
+        <!-- 3rd text column -->
+        <div>
+          
+          <div class="flex">
+            <div class="lg:mr-6">
+              <h3 class="text-[#121212] text-2xl font-bold text-center lg:text-right">Integrated Supplier</h3>
+              <p class="text-[#12121299] font-medium mt-3 text-center lg:text-right">Professional employees are there for you to pick the most 
+                amazing and fresh fruits.
+                <i class="fas fa-user-group text-center"></i>
+              </p>
+            </div>
+            <div class=" bg-gray-200 w-[80px] h-[55px] rounded-full flex justify-center text-center items-center">
+              <i class="fas fa-parachute-box text-[#121212] w-6 h-6"></i>
+            </div>
+            </div>
+        
+            <div class="flex  mt-6">
+              <div class="lg:mr-6">
+                <h3 class="text-[#121212] text-2xl font-bold text-center lg:text-right">Sustainable Practice</h3>
+                <p class="text-[#12121299] font-medium mt-3 text-center lg:text-right">Professional employees are there for you to pick the most 
+                  amazing and fresh fruits.
+                  <i class="fas fa-user-group"></i>
+                </p>
+              </div>
+              <div class=" bg-gray-200 w-[80px] h-[55px] rounded-full flex justify-center text-center items-center">
+                <i class="fas fa-ice-cream text-[#121212] w-6 h-6"></i>
+              </div>
+              </div>
+        
+
+
+              <div class="flex  mt-6">
+                <div class="lg:mr-6">
+                  <h3 class="text-[#121212] text-2xl font-bold text-center lg:text-right">The Benefits Only</h3>
+                  <p class="text-[#12121299] font-medium mt-3 text-center lg:text-right">Professional employees are there for you to pick the most 
+                    amazing and fresh fruits.
+                    
+                  </p>
+                </div>
+                <div class=" bg-gray-200 w-[80px] h-[55px] rounded-full flex justify-center items-center text-center">
+                  <i class="far fa-thumbs-up text-[#121212] w-6 h-6"></i>
+                </div>
+                </div>
+        
+      </div>
+        
+
+
+      </div>
+     </section>
+
     </main>
+
+    <!-- footer section -->
+    <footer>
+      <footer class="footer footer-center p-10 bg-[#121212] text-base-content text-white">
+        <div>
+          <a href="#" class="inline-flex items-center gap-3">
+            <img src="./images/logo.png" alt="Image" class="inline">
+            <h2 class="inline text-white text-4xl font-bold">Fruit Burst</h2>
+          </a>
+        </div>
+      
+        <div class="grid grid-cols-4 lg:grid-cols-6 gap-">
+          <a class="link link-hover text-lg">Home</a> 
+          <a class="link link-hover text-lg">About Us</a> 
+          <a class="link link-hover text-lg">Shop</a> 
+          <a class="link link-hover 2fr text-lg">All Fruits</a>
+          <a class="link link-hover text-lg">Support</a>
+          <a class="link link-hover text-lg">My Account</a>
+        </div> 
+        
+     
+        <div>
+          <div>
+           <ul class="grid grid-cols-6 gap-9 text-2xl">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="#"><i class="fab fa-apple"></i></a></li>
+           </ul>
+          
+        </div> 
+        
+      </footer>
+      
+    </footer>
+
+   <!-- moadl box content -->
+    
+    <!-- modal 1 -->
+
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <div class="card bg-base-100 rounded-lg">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title  mb-2 ">Apple</h2>
+        <p class="mt-2 mb-2 text-[rgba(18, 18, 18, 0.60)] font-medium">Professional employees are there for you to pick the 
+          most amazing and fresh fruits.</p>
+        <div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked  />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+        </div>
+        <div class="card-actions mr-3 mt-8">
+          <div class="flex gap-10">
+            <button class="py-5 w-36 bg-deafult-color rounded-lg mt-3 text-white"><a href="#">Buy Now </a></button>
+            <button class="py-5 px-8 bg-white border border-solid border-red-600 rounded-lg mt-3 w-36 "><a class="text-[#F85559]" href="https://sabbir6083.github.io/BBA3-Fruit-Brust/">Close</a></button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</dialog>
+
+
+   <!-- modal 2 -->
+   
+   <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+     <form method="dialog" class="modal-box">
+       <div class="card bg-base-100 rounded-lg">
+         <figure class="px-10 pt-10">
+           <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+         </figure>
+         <div class="card-body items-center text-center">
+           <h2 class="card-title  mb-2 ">Orange</h2>
+           <p class="mt-2 mb-2 text-[rgba(18, 18, 18, 0.60)] font-medium">Professional employees are there for you to pick the 
+             most amazing and fresh fruits.</p>
+           <div class="rating">
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked  />
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+           </div>
+           <div class="card-actions mr-3 mt-8">
+             <div class="flex gap-10">
+               <button class="py-5 w-36 bg-deafult-color rounded-lg mt-3 text-white"><a href="#">Buy Now </a></button>
+               <button class="py-5 px-8 bg-white border border-solid border-red-600 rounded-lg mt-3 w-36 "><a class="text-[#F85559]" href="https://sabbir6083.github.io/BBA3-Fruit-Brust/">Close</a></button>
+               </div>
+           </div>
+         </div>
+       </div>
+     </form>
+   </dialog>
+
+      <!-- modal 3 -->
+
+<dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <div class="card bg-base-100 rounded-lg">
+      <figure class="px-10 pt-10">
+        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title  mb-2 ">Red Dragon</h2>
+        <p class="mt-2 mb-2 text-[rgba(18, 18, 18, 0.60)] font-medium">Professional employees are there for you to pick the 
+          most amazing and fresh fruits.</p>
+        <div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked  />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+        </div>
+        <div class="card-actions mr-3 mt-8">
+          <div class="flex gap-10">
+            <button class="py-5 w-36 bg-deafult-color rounded-lg mt-3 text-white"><a href="#">Buy Now </a></button>
+            <button class="py-5 px-8 bg-white border border-solid border-red-600 rounded-lg mt-3 w-36 "><a class="text-[#F85559]" href="https://sabbir6083.github.io/BBA3-Fruit-Brust/">Close</a></button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</dialog>
+
+   <!-- modal 4 -->
+   
+   <dialog id="my_modal_9" class="modal modal-bottom sm:modal-middle">
+     <form method="dialog" class="modal-box">
+       <div class="card bg-base-100 rounded-lg">
+         <figure class="px-10 pt-10">
+           <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+         </figure>
+         <div class="card-body items-center text-center">
+           <h2 class="card-title  mb-2 ">Banana</h2>
+           <p class="mt-2 mb-2 text-[rgba(18, 18, 18, 0.60)] font-medium">Professional employees are there for you to pick the 
+             most amazing and fresh fruits.</p>
+           <div class="rating">
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked  />
+             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+           </div>
+           <div class="card-actions mr-3 mt-8">
+             <div class="flex gap-10">
+               <button class="py-5 w-36 bg-deafult-color rounded-lg mt-3 text-white"><a href="#">Buy Now </a></button>
+               <button class="py-5 px-8 bg-white border border-solid border-red-600 rounded-lg mt-3 w-36 "><a class="text-[#F85559]" href="https://sabbir6083.github.io/BBA3-Fruit-Brust/">Close</a></button>
+               </div>
+           </div>
+         </div>
+       </div>
+     </form>
+   </dialog>
 </body>
 </html>
